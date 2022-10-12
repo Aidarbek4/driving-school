@@ -1,0 +1,168 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.header {
+    background-image: url(../images/why-kei-8e2gal_GIE8-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__top {
+        align-items: center;
+        display: flex;
+        background-color: rgba(0, 0, 0, .78);
+        border-bottom: 1px solid #f1f1f1;
+    }
+    &__bottom {
+        background-image: linear-gradient(90deg, rgba(43, 218, 98, .6) 0%, rgba(43, 218, 98, .6) 100%);
+        &-content {
+            max-width: 600px;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 125px;
+            padding-bottom: 120px;
+        }
+        &-title {
+            color: #fff;
+            margin-bottom: 45px;
+            font-size: 35px;
+        }
+        &-text {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 55px;
+        }
+        &-link {
+            padding: 15px 25px;
+            color: #fff;
+            text-decoration: none;
+            border: 2px solid #fff;
+            font-size: 25px;
+            &:hover {
+                background-color: #fff;
+                color: rgb(43, 218, 98);
+            }
+        }
+    }
+    .logo {
+        width: 95px;
+        border-radius: 50%;
+    }
+    .navbar {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+        &__link {
+            font-style: normal;
+            font-weight: 600;
+            font-style: 14px;
+            line-height: 19px;
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+                color: rgb(43, 218, 98);
+            }
+        }
+        &__item {
+            margin-right: 25px;
+        }
+    }
+}
+
+.adventages {
+    background-color: #f1f1f1;
+        padding-top: 65px;
+        padding-bottom: 45px;
+    &__title {
+        font-size: 52px;
+        color: rgb(43, 218, 98);
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 350px;
+        background-color: #fff;
+        border-radius: 25px;
+        padding: 35px 15px 20px;
+        &-img {
+            width: 150px;
+        }
+        &-text {
+            background-color: rgb(43, 218, 98);
+            color: #fff;
+            border-radius: 15px;
+            padding: 20px 10px;
+        }
+        &-title {
+            font-size: 25px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.footer {
+    background-color: #000;
+    border-top: 1px solid #f1f1f1;
+    padding: 35px;
+    padding-bottom: 55px;
+    &__inner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    &__text {
+        color: #f1f1f1;
+    }
+    &__socials {
+        &-title {
+            color: rgb(43, 218, 98);
+        }
+        &-list {
+            display: flex;
+        }
+
+    }
+}
+
+.instructors {
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, .6) 100%), url(../images/orkun-azap-_c7haaSAcIg-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 45px;
+    padding-bottom: 70px;
+    .slider {
+        &__item {
+            position: relative;
+            background-color: rgb(43, 218, 98);
+            padding: 20px;
+        }
+        &__slide {
+            max-width: 360px;
+        }
+        .slick-list {
+            overflow: hidden;
+        }
+        .slick-track {
+            display: flex;
+        }
+    }
+}
