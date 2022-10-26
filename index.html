@@ -32,7 +32,7 @@
                         <a href="inner-pages/categories.html" class="navbar__link">Categories</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="inner-pages/registr.html" class="navbar__link">Registr</a>
+                        <a href="#" id="registr_window" class="navbar__link">Registr</a>
                     </li>
                     <li class="navbar__item">
                         <a href="inner-pages/contacts.html" class="navbar__link">Contacts</a>
@@ -91,61 +91,93 @@
         <div class="container">
             <div class="instructors__inner">
                 <h2 class="instructors__title">Our instructors</h2>
-                <div class="slider">
-                    <div class="slider__item">
-                        <img src="images/ruslan.jpg" alt="slide"    class="slider__slide">
-                        <div class="slider__desc">
-                            <div class="slider__inner">
-                            <h3 class="slider__title">Ruslan</h3>
-                            <p class="slider__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dolorum iusto nam natus at, aliquid pariatur consequuntur eos!
-                            </p>
-                        </div>
+                <div class="slider instructors__slider">
+                  <div class="slider__item">
+                    <div class="slider__item-wrapper">
+                      <img src="images/shon.jpg" alt="instructor" class="slider__img">
                     </div>
-                    <div class="slider__item">
-                        <img src="images/bella.webp" alt="slide"    class="slider__slide">
-                        <div class="slider__desc">
-                            <div class="slider__inner">
-                            <h3 class="slider__title">Bella</h3>
-                            <p class="slider__text">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia repudiandae in labore numquam, commodi tempora officiis temporibus inventore totam assumenda officia iste!
-                            </p>
-                        </div>
+                    <div class="slider__item-inner">
+                      <h3 class="slider__item-title">
+                        Shon
+                      </h3>
+                      <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rem sed vero sint ratione! Debitis.
+                      </p>
                     </div>
-                    <div class="slider__item">
-                        <img src="images/shon.jpg" alt="slide"    class="slider__slide">
-                        <div class="slider__desc">
-                            <div class="slider__inner">
-                            <h3 class="slider__title">Shon</h3>
-                            <p class="slider__text">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore optio expedita quo error qui.
-                            </p>
-                        </div>
+                  </div>
+                  <div class="slider__item">
+                    <div class="slider__item-wrapper">
+                      <img src="images/bella.webp" alt="instructor" class="slider__img">
                     </div>
-                    <div class="slider__item">
-                        <img src="images/patrik.jpg" alt="slide"    class="slider__slide">
-                        <div class="slider__desc">
-                            <div class="slider__inner">
-                            <h3 class="slider__title">Patrik</h3>
-                            <p class="slider__text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis ex rerum nostrum in quod eum porro ullam enim, eligendi laboriosam temporibus tenetur quibusdam magni sapiente. Repudiandae, dicta?
-                            </p>
-                        </div>
+                    <div class="slider__item-inner">
+                      <h3 class="slider__item-title">
+                        Bella
+                      </h3>
+                      <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rem sed vero sint ratione! Debitis.
+                      </p>
                     </div>
-                    <div class="slider__item">
-                        <img src="images/grace.jpg" alt="slide"    class="slider__slide">
-                        <div class="slider__desc">
-                            <div class="slider__inner">
-                            <h3 class="slider__title">Grace</h3>
-                            <p class="slider__text">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, inventore.
-                            </p>
-                        </div>
+                  </div>
+                  <div class="slider__item">
+                    <div class="slider__item-wrapper">
+                      <img src="images/patrik.jpg" alt="instructor" class="slider__img">
                     </div>
+                    <div class="slider__item-inner">
+                      <h3 class="slider__item-title">
+                        Patrik
+                      </h3>
+                      <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rem sed vero sint ratione! Debitis.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slider__item">
+                    <div class="slider__item-wrapper">
+                      <img src="images/ruslan.jpg" alt="instructor" class="slider__img">
+                    </div>
+                    <div class="slider__item-inner">
+                      <h3 class="slider__item-title">
+                        Ruslan
+                      </h3>
+                      <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rem sed vero sint ratione! Debitis.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="slider__item">
+                    <div class="slider__item-wrapper">
+                      <img src="images/grace.jpg" alt="instructor" class="slider__img">
+                    </div>
+                    <div class="slider__item-inner">
+                      <h3 class="slider__item-title">
+                        Grace
+                      </h3>
+                      <p class="slider__item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rem sed vero sint ratione! Debitis.
+                      </p>
+                    </div>
+                  </div>
                 </div>
             </div>
-        </div>
     </section>
+    
+    <div class="registr" onclick="">
+        <div class="registr__inner">
+            <h3 class="registr__title">Registration</h3>
+            <button class="registr__cancel" type="button">
+                x
+            </button>
+            <form class="registr__form">
+                <input type="text" placeholder="Your name" class="registr__input">
+                <input type="text" placeholder="Your surname" class="registr__input">
+                <input type="number" placeholder="Your phone number" class="registr__input">
+                <input type="email" placeholder="Your email" class="registr__input">
+                <input type="password" placeholder="Your password" class="registr__input">
+                <button type="submit">Submit</button>
+                <button type="reset">reset</button>
+            </form>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
